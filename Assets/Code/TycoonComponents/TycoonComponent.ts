@@ -63,7 +63,8 @@ export default class TycoonComponent extends AirshipBehaviour {
 
     public SetButton(button: ButtonComponent, valid: boolean): void {
         if (!Game.IsServer()) return;
-        button.gameObject.GetComponent<Renderer>()!.material = valid ? this.validButtonMaterial : this.invalidButtonMaterial;
+        const buttonTop = button.gameObject.transform.FindChild("button").FindChild("ButtonTop").gameObject;
+        buttonTop.GetComponent<Renderer>()!.material = valid ? this.validButtonMaterial : this.invalidButtonMaterial;
     }
 
     public CheckValidCostButton(button: ButtonComponent): void {

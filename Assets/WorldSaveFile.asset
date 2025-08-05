@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba323a6048de1a5408ffef08e844ed0c, type: 3}
+  m_Name: WorldSaveFile
+  m_EditorClassIdentifier: 
+  chunks: []
+  blockIdToScopeName:
+  - id: 0
+    name: air
+  - id: 1
+    name: '@Easy/Default:DefaultDirt'
+  - id: 2
+    name: '@Easy/Default:DefaultGrass'
+  chunksCompressed: 28b52ffda0060518001c0200c201060de0e97b0000100004dee5b64c01fb6fd10b3ce76de78f170b008a0f7ad100829d2040b01f0408760601822d17207be1bf07881e640315e744fdff5d8ebfd70b1c0100280203fdfdfd0780b03e2e1ff01020d84180a300e38e00823d0408f61000e0e1011ecccc000020fdfdfdfd06d000cade0e01ee20c01d02dc4b0077cf011f02f4000030fefefefefefe07e0c00f52de43803b08708700ef21407608d0de90ca5fcc000020feffffff06d000ee9d87007710e00e01ee2580bbc3c11e02cc000020ffffffff06d0008add0e01ee20c01d02dc4b00774f041f02e40000c10007a060c20fc00f0fdd37807b03b83780f70d207b0368cfa08a83f400003800000000010101061000ae9c1708703f0870670de09e09e01e03c30e04dc000020010101010690d03e004adc0e01ee20c01d04b84b00f76783ef01f4000028020202020207e0c00fd2db43803b08700701de21c05d08d03d71d57e01e4000028020203030307d0006e9b87007710e00e02dc21c05d00c0c721fc0be4000028030303030307d0000adb0e01ee20c01d04b84380bb0080cfc9ff023d000000010003fd0008
+  chunksCompressedV2: 1

@@ -10,13 +10,23 @@ export default class ButtonComponent extends AirshipBehaviour {
     public dependencies: Array<GameObject> = [];
     public unlocks: Array<GameObject> = [];
     public prompt: ProximityPrompt;
+    public animator: Animator | undefined = undefined;
+    private pressed: boolean = false;
 
 	override Start(): void {
         if (!Game.IsClient()) return;
         this.prompt.SetObjectText(`${this.name}`);
         this.prompt.SetActionText(`Buy $${this.price}`);
 		this.prompt.onActivated.Connect(() => {
+            if (this.pressed) return;
+            this.pressed = true;
+            if (this.animator !== undefined) {
+                this.animator.SetTrigger("ButtonPressed");
+                task.wait(2);
+                this.animator.ResetTrigger("ButtonPressed");
+            }
             Network.ClientToServer.TycoonButtonPressed.client.FireServer(this.name);
+            this.pressed = false;
 		});
 	}
 };

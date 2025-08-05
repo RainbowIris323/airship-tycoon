@@ -3,6 +3,7 @@ import TycoonComponent from "./TycoonComponent";
 import { Player } from "@Easy/Core/Shared/Player/Player";
 import LeaderstatsComponent from "Code/UIComponents/Leaderstats/LeaderstatsComponent";
 import { Game } from "@Easy/Core/Shared/Game";
+import Character from "@Easy/Core/Shared/Character/Character";
 
 export default class TycoonManagerComponent extends AirshipBehaviour {
     public tycoons: Array<TycoonComponent> = new Array<TycoonComponent>();
@@ -13,6 +14,27 @@ export default class TycoonManagerComponent extends AirshipBehaviour {
         this.leaderstats.SetDisplayFunction("money", (value) => `$${value}`);
         Airship.Players.onPlayerJoined.Connect((player: Player) => this.OnPlayerJoined(player));
         Airship.Players.onPlayerDisconnected.Connect((player: Player) => this.OnPlayerDisconnected(player));
+
+        Airship.Players.ObservePlayers((player) => {
+            while (this.FindPlayerTycoon(player.userId) === undefined) task.wait(0.1);
+            const tycoon = this.FindPlayerTycoon(player.userId)!;
+            player.SpawnCharacter(tycoon.gameObject.transform.position, {
+                lookDirection: this.transform.forward,
+            });
+        });
+
+        // Respawn characters when they die
+        Airship.Damage.onDeath.Connect((damageInfo) => {
+            const character = damageInfo.gameObject.GetAirshipComponent<Character>();
+            character?.Despawn();
+            if (character?.player) {
+                while (this.FindPlayerTycoon(character?.player.userId) === undefined) task.wait(0.1);
+                const tycoon = this.FindPlayerTycoon(character?.player.userId)!;
+                character?.player.SpawnCharacter(tycoon.gameObject.transform.position, {
+                    lookDirection: this.transform.forward,
+                });
+            }
+        });
     }
 
     private OnPlayerJoined(player: Player): void {
