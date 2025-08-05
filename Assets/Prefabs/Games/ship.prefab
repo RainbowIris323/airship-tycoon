@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 6782007405913936515}
   - component: {fileID: 4955581520353905427}
   - component: {fileID: 4189902586825477753}
+  - component: {fileID: 8931798769875805358}
   m_Layer: 0
   m_Name: MidWater
   m_TagString: Untagged
@@ -528,6 +529,47 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8931798769875805358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096109327424992417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4feffba88dce746a2607f0ec6233b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guid: 8c9cf178-06e9-4595-81bf-79c2ffec84c5
+  script: {fileID: -5108217675296843330, guid: 9b65a21e8dab1f146aad4d1138b529a0, type: 3}
+  scriptPath: Assets/Code/AssignPlayerParentOnTouch.lua
+  forceContext: 0
+  metadata:
+    name: AssignPlayerParentOnTouch
+    singleton: 0
+    decorators: []
+    properties:
+    - name: parent
+      type: object
+      objectType: GameObject
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 0}
+      modified: 0
+    displayIcon: {fileID: 0}
+    displayName: 
 --- !u!1 &1371858806814286418
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,114 +994,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &5043021138624382661
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 914345770088130456}
-  - component: {fileID: 966364649475494081}
-  - component: {fileID: 6377615993202687067}
-  - component: {fileID: 7504108883507629016}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &914345770088130456
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5043021138624382661}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.926, z: 0.294}
-  m_LocalScale: {x: 1, y: 1, z: 0.025}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3859750322229550202}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &966364649475494081
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5043021138624382661}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6377615993202687067
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5043021138624382661}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3ee3feefd9c7446448307e79d4caa4b3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7504108883507629016
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5043021138624382661}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5300470568528814103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,8 +1007,8 @@ GameObject:
   - component: {fileID: 7518280146782144585}
   - component: {fileID: 6271418707006439822}
   - component: {fileID: 8541127285241327771}
-  - component: {fileID: 5287223719410438881}
   - component: {fileID: 915721367716528862}
+  - component: {fileID: 5211300724827885755}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1091,11 +1025,10 @@ Transform:
   m_GameObject: {fileID: 5300470568528814103}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 800}
+  m_LocalPosition: {x: 0, y: 2.75, z: 160}
   m_LocalScale: {x: 10, y: 1.5, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 914345770088130456}
   - {fileID: 6845691620733915727}
   m_Father: {fileID: 8744467861448473980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1198,20 +1131,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
---- !u!75 &5287223719410438881
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300470568528814103}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: -8}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: -8}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &915721367716528862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,15 +1146,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guid: 3c4249c9-c195-498c-9256-046c33a1ecd5
-  script: {fileID: -2272550937895202114, guid: 5338c83c22d08b340bb22b63ebb8d734, type: 3}
-  scriptPath: Assets/Code/CharacterTouchToSwitch.lua
+  script: {fileID: -5108217675296843330, guid: 9b65a21e8dab1f146aad4d1138b529a0, type: 3}
+  scriptPath: Assets/Code/AssignPlayerParentOnTouch.lua
   forceContext: 0
   metadata:
-    name: CharacterTouchToSwitch
+    name: AssignPlayerParentOnTouch
     singleton: 0
     decorators: []
     properties:
-    - name: rb
+    - name: parent
+      type: object
+      objectType: GameObject
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 5300470568528814103}
+      modified: 1
+    displayIcon: {fileID: 0}
+    displayName: 
+--- !u!114 &5211300724827885755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300470568528814103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4feffba88dce746a2607f0ec6233b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guid: 7f5f7922-726e-4021-b94e-668580637940
+  script: {fileID: -7300781372994889026, guid: a7b0694e5f8c2b140ae068e37f882317, type: 3}
+  scriptPath: Assets/Code/MoveComponent.lua
+  forceContext: 0
+  metadata:
+    name: ShipComponent
+    singleton: 0
+    decorators: []
+    properties:
+    - name: rigidbody
       type: object
       objectType: Rigidbody
       items:
@@ -1251,6 +1213,78 @@ MonoBehaviour:
       serializedValue: 
       serializedObject: {fileID: 8541127285241327771}
       modified: 1
+    - name: orbitForce
+      type: number
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 8
+      serializedObject: {fileID: 0}
+      modified: 1
+    - name: radius
+      type: number
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 160
+      serializedObject: {fileID: 0}
+      modified: 1
+    - name: springStrength
+      type: number
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 5
+      serializedObject: {fileID: 0}
+      modified: 1
+    - name: center
+      type: Vector3
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: '{"x":0.0,"y":0.0,"z":0.0}'
+      serializedObject: {fileID: 0}
+      modified: 0
     displayIcon: {fileID: 0}
     displayName: 
 --- !u!1 &6267856506027269293
@@ -1364,7 +1398,7 @@ MonoBehaviour:
             is also assigned in the Resources/NetworkPrefabCollection.asset"'
       nullable: 0
       serializedValue: 
-      serializedObject: {fileID: 8616685848737228372, guid: 4bfcf38072e582e42b941b472d5f3dcb, type: 3}
+      serializedObject: {fileID: 8414366119161005666, guid: e7438eb5786d30d44ae807227688adbe, type: 3}
       modified: 1
     - name: enableJumping
       type: boolean
@@ -1939,7 +1973,7 @@ MonoBehaviour:
         tags: []
       decorators: []
       nullable: 0
-      serializedValue: 25
+      serializedValue: 200
       serializedObject: {fileID: 0}
       modified: 1
     - name: sizeY
@@ -1957,7 +1991,7 @@ MonoBehaviour:
         tags: []
       decorators: []
       nullable: 0
-      serializedValue: 800
+      serializedValue: 200
       serializedObject: {fileID: 0}
       modified: 1
     - name: waterPrefab
