@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6bb3c020ba07904f93cf9126147e068, type: 3}
+  m_Name: IndustrioVoxelList
+  m_EditorClassIdentifier: 
+  scope: '@Raynbo/Industrio'
+  blockDefinitions:
+  - {fileID: 11400000, guid: 7390bb5cc9d3e224fad26065438498b2, type: 2}
+  - {fileID: 11400000, guid: 0836aa8e906ba7a4f9d815aec8f2a11a, type: 2}
+  - {fileID: 11400000, guid: a3570f9bafec63342a7f3a585a2c0f90, type: 2}
+  - {fileID: 11400000, guid: 124f522d0d54f1e47b925de0251cedf5, type: 2}
+  - {fileID: 11400000, guid: 39a17a17db7df6d47a0a57f0f660f29f, type: 2}
+  - {fileID: 11400000, guid: 5ef871abc3540be4889c8dd7cae1ec65, type: 2}
+  - {fileID: 11400000, guid: a4d8104b6072ae14aacb84262ee47ab0, type: 2}
+  - {fileID: 11400000, guid: 8fa5b388f1484664e8e179ba301d05b5, type: 2}
+  - {fileID: 11400000, guid: 3c6f5e0bd6c67a0448b4de4e82d92dcb, type: 2}
+  - {fileID: 11400000, guid: 2b9173b1706d4144889ad0f1e8712414, type: 2}
+  - {fileID: 11400000, guid: 41f13459a419bbe49a3a87a8b14281d8, type: 2}
+  - {fileID: 11400000, guid: 3610be0447d877147b6e62610b104979, type: 2}

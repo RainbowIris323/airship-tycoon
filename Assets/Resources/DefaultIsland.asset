@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba323a6048de1a5408ffef08e844ed0c, type: 3}
+  m_Name: DefaultIsland
+  m_EditorClassIdentifier: 
+  chunks: []
+  blockIdToScopeName:
+  - id: 0
+    name: air
+  - id: 1
+    name: '@Raynbo/Industrio:Grass'
+  - id: 2
+    name: '@Raynbo/Industrio:Gravel'
+  - id: 3
+    name: '@Raynbo/Industrio:Oak Plank'
+  - id: 4
+    name: '@Raynbo/Industrio:Oak Slab'
+  - id: 5
+    name: '@Raynbo/Industrio:Oak Stair'
+  - id: 6
+    name: '@Raynbo/Industrio:Sand'
+  - id: 7
+    name: '@Raynbo/Industrio:Soil'
+  - id: 8
+    name: '@Raynbo/Industrio:Stone'
+  - id: 9
+    name: '@Raynbo/Industrio:Bedrock'
+  - id: 10
+    name: '@Raynbo/Industrio:Stone Deposit'
+  - id: 11
+    name: '@Raynbo/Industrio:Dirt'
+  - id: 12
+    name: '@Raynbo/Industrio:Oak Wood'
+  chunksCompressed: 28b52ffda0568001002d07003204080ee0690c00002600501ae66dc04e0135ad684f7b5afdff97f69f80f6489e33424ca030473507c08a02212566789f2bdca8037c697a055b9552b5d51d943e57a0abd29317ec02ecae247076855b85e20750963de055f52bd02883994376c5b9ca1e5b722afec0f40b8015a0ecc1812afe0c987f1beab688950e6dd50a4d7e575bf45f6da93a94730ca832a37a3b29b17b81280ddad6277334001720770580996783e823e61051862c5793020529be660b55a24eeae85d45f45615b1ce70bf56294611aa7faa3301a459c401682a06511b6e54eac4957cb0b2a1b2102aa3ff8f8feeee
+  chunksCompressedV2: 1
